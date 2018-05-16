@@ -27,7 +27,7 @@ function findMaxArray(array) {
   let maxSum = 0;
 
   for(let i = 0; i < array.length; i++) {
-    let sum = sum + array[i];
+    sum = sum + array[i];
     if(sum > maxSum) {
         maxSum = sum;
     } else if(sum < 0) {
@@ -36,3 +36,5 @@ function findMaxArray(array) {
   }
   return maxSum;
 }
+
+console.log(findMaxArray([-4, 3, -3, 7, 2, -3, 6]));
