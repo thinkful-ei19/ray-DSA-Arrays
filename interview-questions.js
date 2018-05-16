@@ -20,3 +20,19 @@ function filterArray(array) {
   return newArray;
 }
 
+
+// Max sum in the array
+function findMaxArray(array) {
+  let sum = 0;
+  let maxSum = 0;
+
+  for(let i = 0; i < array.length; i++) {
+    let sum = sum + array[i];
+    if(sum > maxSum) {
+        maxSum = sum;
+    } else if(sum < 0) {
+        sum = 0;
+    }
+  }
+  return maxSum;
+}
