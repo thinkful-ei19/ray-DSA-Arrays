@@ -38,3 +38,13 @@ function findMaxArray(array) {
 }
 
 console.log(findMaxArray([-4, 3, -3, 7, 2, -3, 6]));
+
+
+// Merge Arrays
+function mergeArray(arr1, arr2) {
+  let newArray = [...arr1, ...arr2];
+  newArray.sort(function(a, b) {return a-b});
+  return newArray;
+}
+
+console.log(mergeArray([1, 3, 6, 8, 11], [2, 3, 5, 8, 9, 10]));
